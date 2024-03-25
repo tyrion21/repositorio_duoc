@@ -2,7 +2,7 @@ package com.jason.test;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+// import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -29,15 +29,15 @@ public class PeliculaController {
         return peliculas;
     }
 
-    @GetMapping("/peliculas/{id}")
-    public Pelicula getPeliculaById(@PathVariable int id)
-    {
-        for (Pelicula pelicula : peliculas) {
-            if (pelicula.getId() == id) {
-                return pelicula;
-            }
-        }
-        return null;
-    }
+    // @GetMapping("/peliculas/{id}")
+    // public Pelicula getPeliculaById(@PathVariable int id)
+    // {
+    //     for (Pelicula pelicula : peliculas) {
+    //         if (pelicula.getId() == id) {
+    //             return pelicula;
+    //         }
+    //     }
+    //     return null;
+    // }
 
 }
