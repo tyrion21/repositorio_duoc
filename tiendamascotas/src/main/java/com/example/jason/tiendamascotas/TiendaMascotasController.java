@@ -33,6 +33,7 @@ public class TiendaMascotasController {
                 llenarVentasProductos("Comida para gato", 20, 30, 40), "12/07/2022"));
 
     }
+    
 
     private Map<String, List<Integer>> llenarVentasProductos(String productos, Integer venta1, Integer venta2,
             Integer venta3) {
